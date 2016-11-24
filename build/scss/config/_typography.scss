@@ -39,8 +39,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 p {
 	font-family:$trade;
-	font-size:get-vw(64px);
-	line-height:get-vw(104px);
 }
 
 //  you can set styles ither by tag or by class. if you choose class then baseline all tags like this:

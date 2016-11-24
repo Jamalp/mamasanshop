@@ -13,6 +13,7 @@
 var app = app || {};
 (function($){
   app.components = {
+
   	logWhatsInHere : function () {
   		console.log('What it do');
   	}, // this commma is very important . dont forget, leads to broken code. 
@@ -22,9 +23,11 @@ var app = app || {};
   	},
   	
   	showVideos : function () {
+      var el = $('.element');
   		// How you call a cached element
   		// If there was a class called show
   		app.components.els.video.addClass('show');
+      $('.element').addClass('show');
   	},
 
   	// you'll have a function always that will call all your other functions to fire off. This function INIT is it.
@@ -33,7 +36,8 @@ var app = app || {};
       app.components.els = {
     	   // caching elements makes it so javascript doesnt have to look up the element every single time. heres an example:
     	   calendar : $('#calendar'), // app.components.els.calendar
-    	   video : $('.video') // app.components.els.video
+    	   video : $('.video'), // app.components.els.video
+         element :$('.element')
       };
       // How to call the other functions:
       // these fire in order like all javascript functions
@@ -48,4 +52,3 @@ var app = app || {};
     // See how everything is app.components? 
   });
 }(jQuery));
-
