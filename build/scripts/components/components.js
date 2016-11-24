@@ -15,13 +15,13 @@ var app = app || {};
   app.components = {
 
   	logWhatsInHere : function () {
-  		console.log('What it do');
-  	}, // this commma is very important . dont forget, leads to broken code. 
+  		// alert('What it do');
+  	}, // this commma is very important . dont forget, leads to broken code.
 
   	alertWhatsInHere : function () {
-  		alert('What it do');
+  		// alert('What it do');
   	},
-  	
+
   	showVideos : function () {
       var el = $('.element');
   		// How you call a cached element
@@ -49,6 +49,10 @@ var app = app || {};
   // when the document is ready / page is loaded. Call the init function that has all the other functions in it.
   jQuery(document).ready(function() {
     app.components.init(); // firing this page off when the doc is ready.
-    // See how everything is app.components? 
+    // See how everything is app.components?
   });
+<<<<<<< HEAD
 }(jQuery));
+=======
+}(jQuery));
+>>>>>>> cce2d617482f73d7ba04192f3eb29aa0175c45cc
